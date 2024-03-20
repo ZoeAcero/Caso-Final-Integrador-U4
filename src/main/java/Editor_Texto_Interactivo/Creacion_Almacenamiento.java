@@ -15,6 +15,13 @@ public class Creacion_Almacenamiento {
         textArea = new JTextArea(16, 60);
         guardarButton = new JButton("Guardar");
 
-        
+        guardarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                guardarTextToFile();
+            }
+        });
+
+
     }
 }
