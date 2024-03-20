@@ -22,4 +22,11 @@ public class BuscadorPalabras {
         searchButton = new JButton("Search");
         filePathField = new JTextField(30);
         wordField = new JTextField(30);
+
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                searchWord();
+            }
+        });
 }
