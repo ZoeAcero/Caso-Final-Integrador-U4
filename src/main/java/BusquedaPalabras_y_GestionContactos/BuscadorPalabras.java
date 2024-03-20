@@ -10,4 +10,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BuscadorPalabras {
+    private JButton searchButton;
+    private JFrame frame;
+    private JTextArea textArea;
+    private JTextField filePathField;
+    private JTextField wordField;
 }
