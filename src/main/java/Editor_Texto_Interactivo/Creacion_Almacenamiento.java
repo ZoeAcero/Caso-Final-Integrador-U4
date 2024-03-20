@@ -28,6 +28,15 @@ public class Creacion_Almacenamiento {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-
     }
-}
+
+    private void guardarTextToFile() {
+        try {
+            FileWriter writer = new FileWriter("texto.txt");
+            writer.write(textArea.getText());
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+}   }
