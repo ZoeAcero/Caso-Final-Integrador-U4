@@ -13,5 +13,16 @@ public class HerramientaComparacion {
     private JFrame frame;
     private JTextArea textArea;
 
-    
+    public Comparador_Contenido() {
+        frame = new JFrame("Document Comparison");
+        documentList = new JList<>(new String[]{"doc1.txt", "doc2.txt"});
+        textArea = new JTextArea(16, 60);
+        compareButton = new JButton("Compare");
+
+        compareButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                compareDocuments();
+            }
+        });
 }
