@@ -10,5 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AnalisisTexto {
-    
+    private JButton analyzeButton;
+    private JFrame frame;
+    private JTextArea textArea;
+    private JTextField filePathField;
 }
