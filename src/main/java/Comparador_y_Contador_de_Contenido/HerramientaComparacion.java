@@ -66,4 +66,9 @@ public class HerramientaComparacion {
             textArea.append("Please select exactly two documents to compare.\n");
         }
     }
+
+    public static void main(String[] args) {
+        new Comparador_Contenido();
+    }
 }
+
