@@ -34,4 +34,15 @@ public class Navegacion_Listado {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
+
+    private void openDocument() {
+        String selectedDocument = documentList.getSelectedValue();
+        if (selectedDocument != null) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(selectedDocument))) {
+                textArea.read(reader, null);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
