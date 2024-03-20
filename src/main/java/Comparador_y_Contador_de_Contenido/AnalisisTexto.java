@@ -27,4 +27,13 @@ public class AnalisisTexto {
                 analyzeText();
             }
         });
+
+
+        frame.getContentPane().add(filePathField, "North");
+        frame.getContentPane().add(textArea, "Center");
+        frame.getContentPane().add(analyzeButton, "South");
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
 }
