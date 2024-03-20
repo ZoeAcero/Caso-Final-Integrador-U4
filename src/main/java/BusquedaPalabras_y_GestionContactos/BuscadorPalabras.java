@@ -62,4 +62,8 @@ public class BuscadorPalabras {
         }
     }
 
+    public static void main(String[] args) {
+        new BuscadorPalabras();
+    }
+
         }
