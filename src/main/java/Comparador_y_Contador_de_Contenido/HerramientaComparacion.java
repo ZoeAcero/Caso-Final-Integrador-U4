@@ -8,4 +8,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class HerramientaComparacion {
+    private JList<String> documentList;
+    private JButton compareButton;
+    private JFrame frame;
+    private JTextArea textArea;
+
+    
 }
