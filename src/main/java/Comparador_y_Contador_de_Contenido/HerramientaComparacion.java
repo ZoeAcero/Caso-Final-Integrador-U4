@@ -40,4 +40,16 @@ public class HerramientaComparacion {
             try {
                 BufferedReader reader1 = new BufferedReader(new FileReader(selectedDocuments.get(0)));
                 BufferedReader reader2 = new BufferedReader(new FileReader(selectedDocuments.get(1)));
+
+                String line1 = reader1.readLine();
+                String line2 = reader2.readLine();
+
+                while (line1 != null || line2 != null) {
+                    if (line1 == null || line2 == null) {
+                        textArea.append("The documents are not the same.\n");
+                        return;
+                    } else if (!line1.equals(line2)) {
+                        textArea.append("Difference found:\n" + line1 + "\n" + line2 + "\n");
+                        return;
+                    }
 }
