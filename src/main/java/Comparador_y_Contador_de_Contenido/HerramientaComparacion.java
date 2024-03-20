@@ -25,4 +25,12 @@ public class HerramientaComparacion {
                 compareDocuments();
             }
         });
+
+        frame.getContentPane().add(documentList, "West");
+        frame.getContentPane().add(textArea, "Center");
+        frame.getContentPane().add(compareButton, "South");
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
 }
