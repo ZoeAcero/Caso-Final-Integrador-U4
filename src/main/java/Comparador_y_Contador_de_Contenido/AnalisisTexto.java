@@ -43,6 +43,13 @@ public class AnalisisTexto {
             String line = reader.readLine();
             Map<String, Integer> wordCount = new HashMap<>();
 
-            
+
+            while (line != null) {
+                String[] words = line.split("\\s+");
+                for (String word : words) {
+                    wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+                }
+                line = reader.readLine();
+            }
 
         }
