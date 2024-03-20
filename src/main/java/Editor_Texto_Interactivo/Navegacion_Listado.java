@@ -13,5 +13,16 @@ public class Navegacion_Listado {
     private JFrame frame;
     private JTextArea textArea;
 
-    
+    public Navegacion_Listado() {
+        frame = new JFrame("Document List");
+        documentList = new JList<>(new String[]{"doc1.txt", "doc2.txt"});
+        textArea = new JTextArea(16, 60);
+        openButton = new JButton("Open");
+
+        openButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                openDocument();
+            }
+        });
 }
