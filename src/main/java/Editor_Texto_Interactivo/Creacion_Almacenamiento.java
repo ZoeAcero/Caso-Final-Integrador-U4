@@ -39,4 +39,11 @@ public class Creacion_Almacenamiento {
             e.printStackTrace();
 
         }
-}   }
+    }
+   
+    public static void main(String[] args) {
+          new Creacion_Almacenamiento();
+     }
+
+}
+
