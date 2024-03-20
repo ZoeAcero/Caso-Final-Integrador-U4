@@ -25,4 +25,13 @@ public class Navegacion_Listado {
                 openDocument();
             }
         });
+
+
+        frame.getContentPane().add(documentList, "West");
+        frame.getContentPane().add(textArea, "Center");
+        frame.getContentPane().add(openButton, "South");
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
 }
