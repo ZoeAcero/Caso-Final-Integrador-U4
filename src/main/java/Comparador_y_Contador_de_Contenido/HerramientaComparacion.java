@@ -52,4 +52,18 @@ public class HerramientaComparacion {
                         textArea.append("Difference found:\n" + line1 + "\n" + line2 + "\n");
                         return;
                     }
+
+
+                    line1 = reader1.readLine();
+                    line2 = reader2.readLine();
+                }
+
+                textArea.append("The documents are the same.\n");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            textArea.append("Please select exactly two documents to compare.\n");
+        }
+    }
 }
