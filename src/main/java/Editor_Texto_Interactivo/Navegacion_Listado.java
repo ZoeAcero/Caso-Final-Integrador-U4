@@ -8,4 +8,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Navegacion_Listado {
+    private JList<String> documentList;
+    private JButton cargarButton;
+    private JFrame frame;
+    private JTextArea textArea;
+
+    
 }
