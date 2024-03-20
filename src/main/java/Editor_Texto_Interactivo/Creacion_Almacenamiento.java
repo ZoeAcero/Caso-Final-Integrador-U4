@@ -6,4 +6,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Creacion_Almacenamiento {
+    private JTextArea textArea;
+    private JButton guardarButton;
+    private JFrame frame;
+
+    
 }
