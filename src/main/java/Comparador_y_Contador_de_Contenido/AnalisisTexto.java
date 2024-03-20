@@ -36,4 +36,13 @@ public class AnalisisTexto {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
-}
+
+    private void analyzeText() {
+        String filePath = filePathField.getText();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line = reader.readLine();
+            Map<String, Integer> wordCount = new HashMap<>();
+
+            
+
+        }
