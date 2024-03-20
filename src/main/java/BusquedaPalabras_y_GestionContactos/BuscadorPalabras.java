@@ -15,4 +15,11 @@ public class BuscadorPalabras {
     private JTextArea textArea;
     private JTextField filePathField;
     private JTextField wordField;
+
+    public BuscadorPalabras() {
+        frame = new JFrame("Word Search");
+        textArea = new JTextArea(16, 60);
+        searchButton = new JButton("Search");
+        filePathField = new JTextField(30);
+        wordField = new JTextField(30);
 }
