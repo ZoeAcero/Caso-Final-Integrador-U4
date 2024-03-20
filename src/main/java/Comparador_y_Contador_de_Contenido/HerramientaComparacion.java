@@ -33,4 +33,11 @@ public class HerramientaComparacion {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
+
+    private void compareDocuments() {
+        List<String> selectedDocuments = documentList.getSelectedValuesList();
+        if (selectedDocuments.size() == 2) {
+            try {
+                BufferedReader reader1 = new BufferedReader(new FileReader(selectedDocuments.get(0)));
+                BufferedReader reader2 = new BufferedReader(new FileReader(selectedDocuments.get(1)));
 }
