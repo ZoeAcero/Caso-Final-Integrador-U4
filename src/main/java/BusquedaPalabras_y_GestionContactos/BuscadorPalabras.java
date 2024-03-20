@@ -54,4 +54,12 @@ public class BuscadorPalabras {
                 line = reader.readLine();
             }
 
+
+            int count = wordCount.getOrDefault(wordToSearch, 0);
+            textArea.append("The word '" + wordToSearch + "' appears " + count + " times.\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
         }
