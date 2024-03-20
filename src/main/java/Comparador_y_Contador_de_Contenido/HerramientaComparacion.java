@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 
 public class HerramientaComparacion {
     private JList<String> documentList;
@@ -13,7 +14,7 @@ public class HerramientaComparacion {
     private JFrame frame;
     private JTextArea textArea;
 
-    public Comparador_Contenido() {
+    public void Comparador_Contenido() {
         frame = new JFrame("Document Comparison");
         documentList = new JList<>(new String[]{"doc1.txt", "doc2.txt"});
         textArea = new JTextArea(16, 60);
