@@ -17,7 +17,7 @@ public class Navegacion_Listado {
         frame = new JFrame("Document List");
         documentList = new JList<>(new String[]{"doc1.txt", "doc2.txt"});
         textArea = new JTextArea(16, 60);
-        openButton = new JButton("Open");
+        JButton openButton = new JButton("Abierto");
 
         openButton.addActionListener(new ActionListener() {
             @Override
