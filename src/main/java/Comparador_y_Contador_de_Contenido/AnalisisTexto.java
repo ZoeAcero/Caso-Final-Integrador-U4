@@ -14,4 +14,17 @@ public class AnalisisTexto {
     private JFrame frame;
     private JTextArea textArea;
     private JTextField filePathField;
+
+    public AnalisisTexto() {
+        frame = new JFrame("Text Analysis");
+        textArea = new JTextArea(16, 60);
+        analyzeButton = new JButton("Analyze");
+        filePathField = new JTextField(30);
+
+        analyzeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                analyzeText();
+            }
+        });
 }
