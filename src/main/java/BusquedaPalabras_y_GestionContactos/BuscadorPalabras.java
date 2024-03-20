@@ -29,4 +29,13 @@ public class BuscadorPalabras {
                 searchWord();
             }
         });
+
+        frame.getContentPane().add(filePathField, "North");
+        frame.getContentPane().add(wordField, "Center");
+        frame.getContentPane().add(textArea, "East");
+        frame.getContentPane().add(searchButton, "South");
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
 }
