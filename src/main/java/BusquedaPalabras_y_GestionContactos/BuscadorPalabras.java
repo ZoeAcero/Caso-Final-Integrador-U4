@@ -38,4 +38,12 @@ public class BuscadorPalabras {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
-}
+
+    private void searchWord() {
+        String filePath = filePathField.getText();
+        String wordToSearch = wordField.getText();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line = reader.readLine();
+            Map<String, Integer> wordCount = new HashMap<>();
+
+        }
