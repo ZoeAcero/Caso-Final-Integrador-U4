@@ -69,7 +69,7 @@ public class HerramientaComparacion {
     }
 
     public static void main(String[] args) {
-        new Comparador_Contenido();
+        new HerramientaComparacion();
     }
 }
 
