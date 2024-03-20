@@ -22,6 +22,12 @@ public class Creacion_Almacenamiento {
             }
         });
 
+        frame.getContentPane().add(textArea, "Centro");
+        frame.getContentPane().add(guardarButton, "Norte");
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+
 
     }
 }
