@@ -40,7 +40,7 @@ public class Creacion_Almacenamiento {
 
         }
     }
-   
+
     public static void main(String[] args) {
           new Creacion_Almacenamiento();
      }
