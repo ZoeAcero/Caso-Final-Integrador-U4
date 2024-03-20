@@ -10,5 +10,11 @@ public class Creacion_Almacenamiento {
     private JButton guardarButton;
     private JFrame frame;
 
-    
+    public Creacion_Almacenamiento() {
+        frame = new JFrame("Text Editor");
+        textArea = new JTextArea(16, 60);
+        guardarButton = new JButton("Guardar");
+
+        
+    }
 }
