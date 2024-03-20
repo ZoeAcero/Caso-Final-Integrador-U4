@@ -52,4 +52,13 @@ public class AnalisisTexto {
                 line = reader.readLine();
             }
 
+            textArea.append("Number of words: " + wordCount.size() + "\n");
+            for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+                textArea.append(entry.getKey() + ": " + entry.getValue() + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
         }
