@@ -34,5 +34,16 @@ public class Agenda {
             contacto.setTelefono(nuevosDetalles.getTelefono());
             contacto.setEmail(nuevosDetalles.getEmail());
         }
+
+        public void listarContactos() {
+            for(Contacto contacto : contactos){
+                System.out.println("Nombre: " + contacto.getNombre());
+                System.out.println("Telefono: " + contacto.getTelefono());
+                System.out.println("Email: " + contacto.getEmail());
+                System.out.println("-------------------------------");
+            }
+        }
+
+        
     }
 }
