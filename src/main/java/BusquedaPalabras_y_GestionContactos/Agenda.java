@@ -44,6 +44,8 @@ public class Agenda {
             }
         }
 
-        
+        public int contarContactos(){
+            return contactos.size();
+        }
     }
 }
