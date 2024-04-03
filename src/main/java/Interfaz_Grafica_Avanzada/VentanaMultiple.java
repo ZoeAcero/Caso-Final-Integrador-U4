@@ -11,7 +11,11 @@ public class VentanaMultiple {
                 JFrame frame2 = crearVentana("Ventana 2", 500, 100);
                 JFrame frame3 = crearVentana("Ventana 3", 700, 100);
 
-                
+                frame1.setVisible(true);
+                frame2.setVisible(true);
+                frame3.setVisible(true);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
         });
