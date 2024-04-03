@@ -20,4 +20,12 @@ public class Contacto {
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
+
+    public String getTelefono(){
+        return telefono;
+    }
+
+    public void setTelefono(String telefono){
+        this.telefono = telefono;
+    }
 }
