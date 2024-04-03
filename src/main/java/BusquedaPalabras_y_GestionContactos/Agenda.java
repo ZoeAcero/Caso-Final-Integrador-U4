@@ -26,4 +26,13 @@ public class Agenda {
         }
         return null;
     }
+
+    public void actualizarContacto(String nombre, Contacto nuevosDetalles){
+        Contacto contacto = buscarContacto(nombre);
+        if(contacto != null){
+            contacto.setNombre(nuevosDetalles.getNombre());
+            contacto.setTelefono(nuevosDetalles.getTelefono());
+            contacto.setEmail(nuevosDetalles.getEmail());
+        }
+    }
 }
