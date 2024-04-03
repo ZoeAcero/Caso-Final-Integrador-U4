@@ -10,5 +10,12 @@ public class SeguimientoRaton extends JFrame {
     public SeguimientoRaton() {
         etiquetaPosicionRaton = new JLabel();
         add(etiquetaPosicionRaton, BorderLayout.SOUTH);
+
+        addMouseMotionListener(new MouseAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                etiquetaPosicionRaton.setText("Posicion del raton: " + e.getX() + ", Y=" + e.getY());
+            }
+        });
     }
 }
