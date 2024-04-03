@@ -34,6 +34,7 @@ public class Agenda {
             contacto.setTelefono(nuevosDetalles.getTelefono());
             contacto.setEmail(nuevosDetalles.getEmail());
         }
+    }
 
         public void listarContactos() {
             for(Contacto contacto : contactos){
@@ -47,5 +48,4 @@ public class Agenda {
         public int contarContactos(){
             return contactos.size();
         }
-    }
 }
