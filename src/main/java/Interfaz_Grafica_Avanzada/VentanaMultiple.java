@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class VentanaMultiple {
     public static void main(String[] args) {
-        EventQueve.invokeLater(() -> {
+        EventQueue.invokeLater(() -> {
             try {
                 JFrame frame1 = crearVentana("Ventana 1", 100, 100);
                 JFrame frame2 = crearVentana("Ventana 2", 500, 100);
