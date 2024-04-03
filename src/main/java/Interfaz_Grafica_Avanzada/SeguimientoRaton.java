@@ -17,5 +17,10 @@ public class SeguimientoRaton extends JFrame {
                 etiquetaPosicionRaton.setText("Posicion del raton: " + e.getX() + ", Y=" + e.getY());
             }
         });
+
+        setSize(300, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
+    
 }
