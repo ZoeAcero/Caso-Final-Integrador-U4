@@ -20,4 +20,11 @@ public class VentanaMultiple {
 
         });
     }
+
+    private static JFrame crearVentana(String titulo, int x, int y) {
+        JFrame frame = new JFrame(titulo);
+        frame.setBounds(x, y, 300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        return frame;
+    }
 }
