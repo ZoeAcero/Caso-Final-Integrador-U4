@@ -87,6 +87,18 @@ public class Main extends JFrame{
                 validadorEmailGUI.setVisible(true);
             }
         });
+        menuValidadorEmail.add(itemValidadorEmail);
+
+
+        JMenuItem itemHerramientaDibujo = new JMenuItem("Herramienta de Dibujo");
+
+        itemHerramientaDibujo.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HerramientaDibujo herramientaDibujoGUI = new HerramientaDibujo();
+                herramientaDibujoGUI.setVisible(true);
+            }
+        });
+        menuHerramientaDibujo.add(itemHerramientaDibujo);
     }
 
 
