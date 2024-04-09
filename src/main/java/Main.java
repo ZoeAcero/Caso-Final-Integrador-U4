@@ -4,6 +4,7 @@ import Busqueda_de_Palabras_y_Gestion_de_Contactos.Contacto;
 import Editor_Texto_Interactivo.EditorTextoInteractivo;
 import Interfaz_Grafica_Avanzada.*;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import Comparador_y_Contador_de_Contenido.*;
 import ValidacionEmail_y_DiseñoGrafico.*;
@@ -28,6 +29,15 @@ public class Main extends JFrame{
 
 
         this.setJMenuBar(menuBar);
+
+        getContentPane().setBackground(Color.BLUE);
+        JLabel titulo = new JLabel("UAX");
+        titulo.setForeground(Color.BLACK);
+        titulo.setFont(new Font("Arial", Font.BOLD, 50));
+        titulo.setHorizontalAlignment(JLabel.CENTER);
+        setLayout(new GridBagLayout());
+        add(titulo);
+        
 
         JMenuItem itemEditorTexto = new JMenuItem("Editor de Texto");
 
