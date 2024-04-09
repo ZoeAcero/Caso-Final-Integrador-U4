@@ -11,7 +11,8 @@ public class Main extends JFrame{
 
     JMenu menuEditorTexto = new JMenu("Editor de Texto");
     JMenu menuBusquedaGestion = new JMenu("Busqueda de Palabras y Gestion de Contactos");
-    JMenu menuInterfazGrafica = new JMenu("Interfaz Grafica Avanzada");
+    JMenu menuAgendaContactos = new JMenu("Agenda de Contactos");
+    JMenu menuInterfazGrafica = new JMenu("Ventana de Documento");
     JMenu menuComparadorContenido = new JMenu("Comparador y Contador de Contenido");
     JMenu menuValidadorEmail = new JMenu("Validador de Email");
     JMenu menuHerramientaDibujo = new JMenu("Herramienta de Dibujo");
@@ -23,6 +24,7 @@ public class Main extends JFrame{
         menuBar.add(menuComparadorContenido);
         menuBar.add(menuValidadorEmail);
         menuBar.add(menuHerramientaDibujo);
+        menuBar.add(menuAgendaContactos);
 
         this.setJMenuBar(menuBar);
 
