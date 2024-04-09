@@ -4,6 +4,7 @@ import Interfaz_Grafica_Avanzada.*;
 import javax.swing.*;
 import java.awt.event.*;
 import Comparador_y_Contador_de_Contenido.*;
+import ValidacionEmail_y_DiseñoGrafico.*;
 
 public class Main extends JFrame{
     JMenuBar menuBar = new JMenuBar();
@@ -12,6 +13,8 @@ public class Main extends JFrame{
     JMenu menuBusquedaGestion = new JMenu("Busqueda de Palabras y Gestion de Contactos");
     JMenu menuInterfazGrafica = new JMenu("Interfaz Grafica Avanzada");
     JMenu menuComparadorContenido = new JMenu("Comparador y Contador de Contenido");
+    JMenu menuValidadorEmail = new JMenu("Validador de Email");
+    JMenu menuHerramientaDibujo = new JMenu("Herramienta de Dibujo");
 
     public Main() {
         menuBar.add(menuEditorTexto);
