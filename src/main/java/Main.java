@@ -73,4 +73,43 @@ public class Main () {
     });
     menuBusquedaGestion.add(itemBusquedaGestion);
 
+
+    // agenda de contactos
+
+    JMenuItem itemAgendaContactos = new JMenuItem("Agenda de Contactos");
+
+    itemAgendaContactos.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            AgendaContactosGUI agendaContactosGUI = new AgendaContactosGUI();
+            agendaContactosGUI.setVisible(true);
+        }
+    });
+    menuBusquedaGestion.add(itemAgendaContactos);
+
+
+    // validador de email
+
+    JMenuItem itemValidadorEmail = new JMenuItem("Validador de Email");
+
+    itemValidadorEmail.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            ValidadorEmailGUI validadorEmailGUI = new ValidadorEmailGUI();
+            validadorEmailGUI.setVisible(true);
+        }
+    });
+    menuBusquedaGestion.add(itemValidadorEmail);
+
+
+    // interfaz grafica avanzada
+
+    JMenuItem itemHerramientaDibujo = new JMenuItem("Herramienta de Dibujo");
+
+    itemHerramientaDibujo.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            HerramientaDibujoGUI herramientaDibujoGUI = new HerramientaDibujoGUI();
+            herramientaDibujoGUI.setVisible(true);
+        }
+    });
+    menuInterfazGrafica.add(itemHerramientaDibujo);
+
 }
