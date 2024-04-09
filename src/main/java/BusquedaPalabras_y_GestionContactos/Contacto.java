@@ -11,6 +11,10 @@ public class Contacto {
         this.numeroTelefono = numeroTelefono;
     }
 
+    public Contacto() {
+
+    }
+
     // Getters y setters para nombre, email y numeroTelefono
 
     public String getNombre() {
