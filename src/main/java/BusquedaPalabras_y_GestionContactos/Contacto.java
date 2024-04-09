@@ -1,39 +1,41 @@
-package BusquedaPalabras_y_GestionContactos;
+package Busqueda_de_Palabras_y_Gestion_de_Contactos;
 
 public class Contacto {
     private String nombre;
-    private String telefono;
     private String email;
+    private String numeroTelefono;
 
-    public Contacto(String nombre, String telefono, String email){
+    public Contacto(String nombre, String email, String numeroTelefono) {
         this.nombre = nombre;
-        this.telefono = telefono;
         this.email = email;
+        this.numeroTelefono = numeroTelefono;
     }
 
-    // Getters y Setters
+    // Getters y setters para nombre, email y numeroTelefono
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getTelefono(){
-        return telefono;
-    }
-
-    public void setTelefono(String telefono){
-        this.telefono = telefono;
-    }
-
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email){
+    public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getNumeroTelefono() {
+        return numeroTelefono;
+    }
+
+    public void setNumeroTelefono(String numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
+    
 }
+
