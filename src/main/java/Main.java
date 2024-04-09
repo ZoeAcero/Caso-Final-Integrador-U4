@@ -1,14 +1,12 @@
 import java.util.Scanner;
 import BusquedaPalabras_y_GestionContactos.*;
 import Interfaz_Grafica_Avanzada.*;
-import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import Editor_Texto_Interactivo.*;
 import Comparador_y_Contador_de_Contenido.*;
 
-public class Main {
-
+public class Main extends JFrame{
     JMenuBar menuBar = new JMenuBar();
 
     JMenu menuEditorTexto = new JMenu("Editor de Texto");
@@ -16,7 +14,7 @@ public class Main {
     JMenu menuInterfazGrafica = new JMenu("Interfaz Grafica Avanzada");
     JMenu menuComparadorContenido = new JMenu("Comparador y Contador de Contenido");
 
-    Main() {
+    public Main() {
         menuBar.add(menuEditorTexto);
         menuBar.add(menuBusquedaGestion);
         menuBar.add(menuInterfazGrafica);
@@ -28,7 +26,7 @@ public class Main {
 
         itemEditorTexto.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                EditorTextoGUI editorTextoGUI = new EditorTextoGUI();
+                AnalisisTexto editorTextoGUI = new AnalisisTexto();
                 editorTextoGUI.setVisible(true);
             }
         });
@@ -38,17 +36,18 @@ public class Main {
 
         itemComparadorContenido.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                ComparadorContenidoGUI comparadorContenidoGUI = new ComparadorContenidoGUI();
+                HerramientaComparacion comparadorContenidoGUI = new HerramientaComparacion();
                 comparadorContenidoGUI.setVisible(true);
             }
         });
+
         menuComparadorContenido.add(itemComparadorContenido);
 
         JMenuItem itemBusquedaGestion = new JMenuItem("Busqueda de Palabras y Gestion de Contactos");
 
         itemBusquedaGestion.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                BusquedaGestionGUI busquedaGestionGUI = new BusquedaGestionGUI();
+                BuscadorPalabras busquedaGestionGUI = new BuscadorPalabras();
                 busquedaGestionGUI.setVisible(true);
             }
         });
@@ -58,30 +57,37 @@ public class Main {
 
         itemAgendaContactos.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                AgendaContactosGUI agendaContactosGUI = new AgendaContactosGUI();
+                Agenda agendaContactosGUI = new Agenda();
                 agendaContactosGUI.setVisible(true);
             }
         });
         menuBusquedaGestion.add(itemAgendaContactos);
-
-        JMenuItem itemValidadorEmail = new JMenuItem("Validador de Email");
-
-        itemValidadorEmail.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                ValidadorEmailGUI validadorEmailGUI = new ValidadorEmailGUI();
-                validadorEmailGUI.setVisible(true);
-            }
-        });
-        menuBusquedaGestion.add(itemValidadorEmail);
+        
 
         JMenuItem itemHerramientaDibujo = new JMenuItem("Herramienta de Dibujo");
 
         itemHerramientaDibujo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                HerramientaDibujoGUI herramientaDibujoGUI = new HerramientaDibujoGUI();
+                HerramientaDibujo herramientaDibujoGUI = new HerramientaDibujo();
                 herramientaDibujoGUI.setVisible(true);
             }
         });
         menuInterfazGrafica.add(itemHerramientaDibujo);
     }
+
+    private void setJMenuBar(JMenuBar menuBar) {
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            try {
+                MainFrame frame = new MainFrame();
+                frame.setVisible(true);
+            } catch (Exception e) {
+                JOptionPane JDptionPane = null;
+                JDptionPane.showMessageDialog(null, e.getMessage());
+            }
+        });
+    }
 }
+
