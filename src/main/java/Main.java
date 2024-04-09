@@ -79,11 +79,10 @@ public class Main extends JFrame{
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {
-                MainFrame frame = new MainFrame();
+                Main frame = new Main();
                 frame.setVisible(true);
             } catch (Exception e) {
-                JOptionPane JDptionPane = null;
-                JDptionPane.showMessageDialog(null, e.getMessage());
+                JOptionPane.showMessageDialog(null, e.getMessage());
             }
         });
     }
