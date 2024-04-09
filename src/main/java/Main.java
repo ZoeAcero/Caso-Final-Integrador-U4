@@ -1,9 +1,7 @@
-import java.util.Scanner;
 import BusquedaPalabras_y_GestionContactos.*;
 import Interfaz_Grafica_Avanzada.*;
 import javax.swing.*;
 import java.awt.event.*;
-import Editor_Texto_Interactivo.*;
 import Comparador_y_Contador_de_Contenido.*;
 
 public class Main extends JFrame{
