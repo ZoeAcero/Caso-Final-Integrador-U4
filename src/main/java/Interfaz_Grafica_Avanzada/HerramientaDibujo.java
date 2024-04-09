@@ -44,6 +44,20 @@ public class HerramientaDibujo extends JFrame{
     add(panelDibujo);
     setSize(300, 200);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
+
+
+public static void main(String[] args) {
+    SwingUtilities.invokeLater(() -> {
+        try {
+            HerramientaDibujo frame = new HerramientaDibujo();
+            frame.setVisible(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    });
+}
+}
 
 
