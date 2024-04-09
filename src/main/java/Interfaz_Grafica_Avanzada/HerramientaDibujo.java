@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class HerramientaDibujo extends JFrame{
     private Point puntoInicio = null;
-    private Point puntoFin = null;
+    private Point puntoFinal = null;
 
     public HerramientaDibujo() {
         JPanel panelDibujo = new JPanel();
@@ -18,7 +18,17 @@ public class HerramientaDibujo extends JFrame{
         }
     };
 
-    
+panelDibujo.addMouseMotionListener(new MouseAdapter() {
+    public void mousePressed(MouseEvent e) {
+        puntoInicio = new Point(e.getX() , e.getY());
+            puntoFinal = puntoInicio;
+            repaint();
+        }
+    }
+
+
+
+
         }
 
-}
+
