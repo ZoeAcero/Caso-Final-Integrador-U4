@@ -67,8 +67,8 @@ public class Main extends JFrame{
 
         itemHerramientaDibujo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                HerramientaDibujo herramientaDibujoGUI = new HerramientaDibujo();
-                herramientaDibujoGUI.setVisible(true);
+                VentanaDocumento ventanaDocumentoGUI = new VentanaDocumento();
+                ventanaDocumentoGUI.setVisible(true);
             }
         });
         menuInterfazGrafica.add(itemHerramientaDibujo);
