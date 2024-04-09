@@ -1,4 +1,5 @@
 import BusquedaPalabras_y_GestionContactos.*;
+import Editor_Texto_Interactivo.EditorTextoInteractivo;
 import Interfaz_Grafica_Avanzada.*;
 import javax.swing.*;
 import java.awt.event.*;
@@ -24,7 +25,7 @@ public class Main extends JFrame{
 
         itemEditorTexto.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                AnalisisTexto editorTextoGUI = new AnalisisTexto();
+                EditorTextoInteractivo editorTextoGUI = new EditorTextoInteractivo();
                 editorTextoGUI.setVisible(true);
             }
         });
@@ -34,7 +35,7 @@ public class Main extends JFrame{
 
         itemComparadorContenido.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                HerramientaComparacion comparadorContenidoGUI = new HerramientaComparacion();
+                HerramientasTexto comparadorContenidoGUI = new HerramientasTexto();
                 comparadorContenidoGUI.setVisible(true);
             }
         });
@@ -45,7 +46,7 @@ public class Main extends JFrame{
 
         itemBusquedaGestion.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                BuscadorPalabras busquedaGestionGUI = new BuscadorPalabras();
+                Busqueda_de_Palabras_y_Gestion_de_Contactos.BuscadorPalabras busquedaGestionGUI = new Busqueda_de_Palabras_y_Gestion_de_Contactos.BuscadorPalabras();
                 busquedaGestionGUI.setVisible(true);
             }
         });
