@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class BuscadorPalabras extends JFrame {
     private JFrame parentFrame;
 
-    public BuscadorPalabras(JFrame parentFrame) {
+    public BuscadorPalabras() {
         this.parentFrame = parentFrame;
     }
 
