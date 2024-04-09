@@ -27,4 +27,23 @@ public class HerramientaDibujo extends JFrame{
             panelDibujo.repaint();
         }
 
-        
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+            puntoFinal = null;
+            puntoInicio = null;
+        }
+
+        @Override
+        public void mouseDragged(MouseEvent e) {
+            puntoFinal = new Point(e.getX(), e.getY());
+            panelDibujo.repaint();
+        }
+    });
+
+    add(panelDibujo);
+    setSize(300, 200);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+
