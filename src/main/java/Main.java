@@ -56,7 +56,7 @@ public class Main extends JFrame{
 
         itemAgendaContactos.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Contacto agendaContactosGUI = new Contacto();
+                Agenda agendaContactosGUI = new Agenda();
                 agendaContactosGUI.setVisible(true);
             }
         });
