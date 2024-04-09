@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class HerramientasTexto {
     private JFrame parentFrame;
 
-    public HerramientasTexto(JFrame parentFrame) {
+    public HerramientasTexto() {
         this.parentFrame = parentFrame;
     }
 
@@ -56,5 +56,8 @@ public class HerramientasTexto {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void setVisible(boolean b) {
     }
 }
