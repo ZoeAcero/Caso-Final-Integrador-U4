@@ -24,6 +24,21 @@ panelDibujo.addMouseMotionListener(new MouseAdapter() {
             puntoFinal = puntoInicio;
             repaint();
         }
+
+        public void mouseReleased(MouseEvent e) {
+            puntoFinal = null;
+            puntoInicio = null;
+        }
+    });
+
+    panelDibujo.addMouseMotionListener(new MouseAdapter() {
+        public void mouseDragged(MouseEvent e) {
+            puntoFinal = new Point(e.getX(), e.getY());
+            repaint();
+        }
+    });
+
+    
     }
 
 
