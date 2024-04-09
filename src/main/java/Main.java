@@ -45,4 +45,32 @@ public class Main () {
         }
     });
     menuEditorTexto.add(itemEditorTexto);
+
+
+
+    //comparador y contador de contenido
+
+    JMenuItem itemComparadorContenido = new JMenuItem("Comparador y Contador de Contenido");
+
+    itemComparadorContenido.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            ComparadorContenidoGUI comparadorContenidoGUI = new ComparadorContenidoGUI();
+            comparadorContenidoGUI.setVisible(true);
+        }
+    });
+    menuComparadorContenido.add(itemComparadorContenido);
+
+
+    //busqueda de palabras y gestion de contactos
+
+    JMenuItem itemBusquedaGestion = new JMenuItem("Busqueda de Palabras y Gestion de Contactos");
+
+    itemBusquedaGestion.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            BusquedaGestionGUI busquedaGestionGUI = new BusquedaGestionGUI();
+            busquedaGestionGUI.setVisible(true);
+        }
+    });
+    menuBusquedaGestion.add(itemBusquedaGestion);
+
 }
