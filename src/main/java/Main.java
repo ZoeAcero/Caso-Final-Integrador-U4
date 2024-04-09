@@ -21,6 +21,8 @@ public class Main extends JFrame{
         menuBar.add(menuBusquedaGestion);
         menuBar.add(menuInterfazGrafica);
         menuBar.add(menuComparadorContenido);
+        menuBar.add(menuValidadorEmail);
+        menuBar.add(menuHerramientaDibujo);
 
         this.setJMenuBar(menuBar);
 
@@ -66,15 +68,25 @@ public class Main extends JFrame{
         menuBusquedaGestion.add(itemAgendaContactos);
 
 
-        JMenuItem itemHerramientaDibujo = new JMenuItem("Herramienta de Dibujo");
+        JMenuItem itemInterfazGrafica = new JMenuItem("Ventana de Documento");
 
-        itemHerramientaDibujo.addActionListener(new ActionListener() {
+        itemInterfazGrafica.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 VentanaDocumento ventanaDocumentoGUI = new VentanaDocumento();
                 ventanaDocumentoGUI.setVisible(true);
             }
         });
-        menuInterfazGrafica.add(itemHerramientaDibujo);
+        menuInterfazGrafica.add(itemInterfazGrafica);
+
+
+        JMenuItem itemValidadorEmail = new JMenuItem("Validador de Email");
+
+        itemValidadorEmail.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ValidadorEmail validadorEmailGUI = new ValidadorEmail();
+                validadorEmailGUI.setVisible(true);
+            }
+        });
     }
 
 
