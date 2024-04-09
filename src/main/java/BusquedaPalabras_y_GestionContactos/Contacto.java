@@ -37,5 +37,7 @@ public class Contacto {
         this.numeroTelefono = numeroTelefono;
     }
 
+    public void setVisible(boolean b) {
+    }
 }
 

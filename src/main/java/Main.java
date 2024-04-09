@@ -1,4 +1,6 @@
 import BusquedaPalabras_y_GestionContactos.*;
+import Busqueda_de_Palabras_y_Gestion_de_Contactos.BuscadorPalabras;
+import Busqueda_de_Palabras_y_Gestion_de_Contactos.Contacto;
 import Editor_Texto_Interactivo.EditorTextoInteractivo;
 import Interfaz_Grafica_Avanzada.*;
 import javax.swing.*;
@@ -45,28 +47,42 @@ public class Main extends JFrame{
                 comparadorContenidoGUI.setVisible(true);
             }
         });
-
         menuComparadorContenido.add(itemComparadorContenido);
 
-        JMenuItem itemBusquedaGestion = new JMenuItem("Busqueda de Palabras y Gestion de Contactos");
 
-        itemBusquedaGestion.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                Busqueda_de_Palabras_y_Gestion_de_Contactos.BuscadorPalabras busquedaGestionGUI = new Busqueda_de_Palabras_y_Gestion_de_Contactos.BuscadorPalabras();
-                busquedaGestionGUI.setVisible(true);
-            }
-        });
-        menuBusquedaGestion.add(itemBusquedaGestion);
+        JMenuItem itemAgenda = new JMenuItem("Agenda de Contactos");
 
-        JMenuItem itemAgendaContactos = new JMenuItem("Agenda de Contactos");
-
-        itemAgendaContactos.addActionListener(new ActionListener() {
+        itemAgenda.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Agenda agendaGUI = new Agenda();
                 agendaGUI.setVisible(true);
             }
         });
-        menuBusquedaGestion.add(itemAgendaContactos);
+        menuBusquedaGestion.add(itemAgenda);
+
+
+        JMenuItem itemBusquedaPalabras = new JMenuItem("Busqueda de Palabras");
+
+        itemBusquedaPalabras.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Busqueda_de_Palabras_y_Gestion_de_Contactos.BuscadorPalabras busquedaPalabrasGUI = new BuscadorPalabras();
+                busquedaPalabrasGUI.setVisible(true);
+            }
+        });
+        menuBusquedaGestion.add(itemBusquedaPalabras);
+
+
+        JMenuItem itemContactos = new JMenuItem("Gestion de Contactos");
+
+        itemContactos.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Busqueda_de_Palabras_y_Gestion_de_Contactos.Contacto gestionContactosGUI = new Contacto();
+                gestionContactosGUI.setVisible(true);
+            }
+        });
+        menuBusquedaGestion.add(itemContactos);
+
+
 
 
         JMenuItem itemInterfazGrafica = new JMenuItem("Ventana de Documento");
