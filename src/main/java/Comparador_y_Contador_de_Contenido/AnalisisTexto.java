@@ -65,6 +65,9 @@ public class AnalisisTexto {
     public static void main(String[] args) {
         new AnalisisTexto();
     }
+
+    public void setVisible(boolean b) {
+    }
 }
 
 

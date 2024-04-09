@@ -71,5 +71,8 @@ public class HerramientaComparacion {
     public static void main(String[] args) {
         new HerramientaComparacion();
     }
+
+    public void setVisible(boolean b) {
+    }
 }
 

@@ -48,4 +48,7 @@ public class Agenda {
         public int contarContactos(){
             return contactos.size();
         }
+
+    public void setVisible(boolean b) {
+    }
 }

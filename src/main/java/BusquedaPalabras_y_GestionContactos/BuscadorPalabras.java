@@ -66,4 +66,6 @@ public class BuscadorPalabras {
         new BuscadorPalabras();
     }
 
-        }
+    public void setVisible(boolean b) {
+    }
+}

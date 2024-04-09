@@ -62,7 +62,7 @@ public class Main extends JFrame{
             }
         });
         menuBusquedaGestion.add(itemAgendaContactos);
-        
+
 
         JMenuItem itemHerramientaDibujo = new JMenuItem("Herramienta de Dibujo");
 
@@ -75,8 +75,6 @@ public class Main extends JFrame{
         menuInterfazGrafica.add(itemHerramientaDibujo);
     }
 
-    private void setJMenuBar(JMenuBar menuBar) {
-    }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
