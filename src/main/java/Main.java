@@ -33,11 +33,12 @@ public class Main extends JFrame{
         getContentPane().setBackground(Color.BLUE);
         JLabel titulo = new JLabel("UAX");
         titulo.setForeground(Color.BLACK);
-        titulo.setFont(new Font("Arial", Font.BOLD, 50));
+        titulo.setFont(new Font("Arial", Font.BOLD, 200));
         titulo.setHorizontalAlignment(JLabel.CENTER);
         setLayout(new GridBagLayout());
         add(titulo);
-        
+        getContentPane().setBackground(Color.getHSBColor(0.6f, 0.5f, 0.9f));
+
 
         JMenuItem itemEditorTexto = new JMenuItem("Editor de Texto");
 
